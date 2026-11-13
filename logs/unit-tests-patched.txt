@@ -1,0 +1,32 @@
+◇ Test run started.
+◇ Suite "Background session handler" started.
+◇ Suite "Background session completion" started.
+◇ Test testDeadlineNeverPrecedesFinalEvent() started.
+◇ Test testCompletesAtOnceForSessionOfAnotherModule() started.
+◇ Test testLegacySingletonCompletesAtOnce() started.
+◇ Test testDuplicateHandlerDoesNotExtendDeadline() started.
+◇ Test testDuplicateHandlerPreservesAcknowledgmentsAndBothCompletions() started.
+◇ Test testWaitsForEverySuccessfulDownloadAndFinalEvent() started.
+◇ Test testDeadlineReleasesUnacknowledgedDownloadAfterFinalEvent() started.
+◇ Test testReleaseAndCancellationDropRegistration() started.
+◇ Test testDefaultAndOtherSessionsRemainIndependent() started.
+◇ Test testDuplicateHandlerWaitsForItsFinalEvent() started.
+◇ Test testOldTimerCannotCompleteNewWake() started.
+◇ Test testDuplicateHandlerPreservesExpiredDeadlineAndWaitsForFinalEvent() started.
+◇ Test testForegroundAndFailedSaveDoNotDelayLaterWake() started.
+✔ Test testDuplicateHandlerDoesNotExtendDeadline() passed after 0.001 seconds.
+✔ Test testDuplicateHandlerPreservesAcknowledgmentsAndBothCompletions() passed after 0.001 seconds.
+✔ Test testDuplicateHandlerWaitsForItsFinalEvent() passed after 0.001 seconds.
+✔ Test testDuplicateHandlerPreservesExpiredDeadlineAndWaitsForFinalEvent() passed after 0.001 seconds.
+✔ Test testDeadlineReleasesUnacknowledgedDownloadAfterFinalEvent() passed after 0.001 seconds.
+✔ Test testDefaultAndOtherSessionsRemainIndependent() passed after 0.001 seconds.
+✔ Test testWaitsForEverySuccessfulDownloadAndFinalEvent() passed after 0.001 seconds.
+✔ Test testOldTimerCannotCompleteNewWake() passed after 0.001 seconds.
+✔ Test testReleaseAndCancellationDropRegistration() passed after 0.001 seconds.
+✔ Test testForegroundAndFailedSaveDoNotDelayLaterWake() passed after 0.001 seconds.
+✔ Test testDeadlineNeverPrecedesFinalEvent() passed after 0.001 seconds.
+✔ Suite "Background session completion" passed after 0.002 seconds.
+✔ Test testCompletesAtOnceForSessionOfAnotherModule() passed after 0.003 seconds.
+✔ Test testLegacySingletonCompletesAtOnce() passed after 0.003 seconds.
+✔ Suite "Background session handler" passed after 0.004 seconds.
+✔ Test run with 13 tests in 2 suites passed after 0.006 seconds.

@@ -1,0 +1,25 @@
+  expo-env-info 2.2.1 environment info:
+    System:
+      OS: macOS 27.0.1
+      Shell: 5.9 - /bin/zsh
+    Binaries:
+      Node: 22.16.0 - ~/.nvm/versions/node/v22.16.0/bin/node
+      Yarn: 1.22.22 - ~/.nvm/versions/node/v22.16.0/bin/yarn
+      npm: 11.7.0 - ~/.nvm/versions/node/v22.16.0/bin/npm
+      Watchman: 2025.03.10.00 - /opt/homebrew/bin/watchman
+    Managers:
+      CocoaPods: 1.17.0 - /opt/homebrew/bin/pod
+    SDKs:
+      iOS SDK:
+        Platforms: DriverKit 27.0, iOS 27.1, macOS 27.0, tvOS 27.0, visionOS 27.0, watchOS 27.0
+    IDEs:
+      Android Studio: 2026.2 AI-262.9437.185.2621.16467767
+      Xcode: 27.1/27A9275 - /usr/bin/xcodebuild
+    npmPackages:
+      expo: ~58.0.25 => 58.0.25 
+      react: 19.3.0 => 19.3.0 
+      react-native: 0.88.1 => 0.88.1 
+    npmGlobalPackages:
+      eas-cli: 27.9.0
+    Expo Workflow: bare
+

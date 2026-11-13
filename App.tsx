@@ -1,3 +1,4 @@
+import { Directory, File, Paths } from 'expo-file-system';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
@@ -18,6 +19,22 @@ export default function App() {
         onPress={() => {
           const session = BackgroundSessionProbe.startUpload(SLOW_URL);
           setStatus(`upload started on ${session}; now background or terminate the app`);
+        }}
+      />
+      <Button
+        title="Start expo-file-system background download"
+        onPress={() => {
+          // expo-file-system's own background session, to check that iOS gets its handler too.
+          const destination = new Directory(Paths.cache, `fs-download-${Date.now()}`);
+          destination.create();
+          const task = File.createDownloadTask('http://localhost:8099/fs-download', destination, {
+            sessionType: 'background',
+          });
+          task
+            .downloadAsync()
+            .then((file) => setStatus(`expo-file-system download finished: ${file?.uri}`))
+            .catch((error) => setStatus(`expo-file-system download failed: ${error}`));
+          setStatus('expo-file-system background download started; now background the app');
         }}
       />
       <Text testID="status">{status}</Text>

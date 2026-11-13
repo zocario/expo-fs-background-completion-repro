@@ -1,0 +1,34 @@
+◇ Test run started.
+◇ Suite "Background session completion" started.
+◇ Suite "Background session handler" started.
+◇ Test testReleaseAndCancellationDropRegistration() started.
+◇ Test testLegacySingletonCompletesAtOnce() started.
+◇ Test testCompletesAtOnceForSessionOfAnotherModule() started.
+◇ Test testDefaultAndOtherSessionsRemainIndependent() started.
+◇ Test testDuplicateHandlerPreservesExpiredDeadlineAndWaitsForFinalEvent() started.
+◇ Test testDeadlineReleasesUnacknowledgedDownloadAfterFinalEvent() started.
+◇ Test testDuplicateHandlerDoesNotExtendDeadline() started.
+◇ Test testDuplicateHandlerWaitsForItsFinalEvent() started.
+◇ Test testOldTimerCannotCompleteNewWake() started.
+◇ Test testForegroundAndFailedSaveDoNotDelayLaterWake() started.
+◇ Test testDuplicateHandlerPreservesAcknowledgmentsAndBothCompletions() started.
+◇ Test testDeadlineNeverPrecedesFinalEvent() started.
+◇ Test testWaitsForEverySuccessfulDownloadAndFinalEvent() started.
+✔ Test testDuplicateHandlerDoesNotExtendDeadline() passed after 0.005 seconds.
+✔ Test testDefaultAndOtherSessionsRemainIndependent() passed after 0.005 seconds.
+✔ Test testForegroundAndFailedSaveDoNotDelayLaterWake() passed after 0.005 seconds.
+✔ Test testDuplicateHandlerPreservesAcknowledgmentsAndBothCompletions() passed after 0.001 seconds.
+✔ Test testDeadlineNeverPrecedesFinalEvent() passed after 0.005 seconds.
+✔ Test testWaitsForEverySuccessfulDownloadAndFinalEvent() passed after 0.001 seconds.
+✔ Test testOldTimerCannotCompleteNewWake() passed after 0.005 seconds.
+✔ Test testDuplicateHandlerWaitsForItsFinalEvent() passed after 0.006 seconds.
+✔ Test testDuplicateHandlerPreservesExpiredDeadlineAndWaitsForFinalEvent() passed after 0.006 seconds.
+✔ Test testReleaseAndCancellationDropRegistration() passed after 0.006 seconds.
+✔ Test testDeadlineReleasesUnacknowledgedDownloadAfterFinalEvent() passed after 0.006 seconds.
+✔ Suite "Background session completion" passed after 0.017 seconds.
+✘ Test testCompletesAtOnceForSessionOfAnotherModule() recorded an issue at test_FileSystemBackgroundSessionHandler.swift:19:5: Expectation failed: calls == 1
+✘ Test testLegacySingletonCompletesAtOnce() recorded an issue at test_FileSystemBackgroundSessionHandler.swift:30:5: Expectation failed: calls == 1
+✘ Test testCompletesAtOnceForSessionOfAnotherModule() failed after 0.021 seconds with 1 issue.
+✘ Test testLegacySingletonCompletesAtOnce() failed after 0.021 seconds with 1 issue.
+✘ Suite "Background session handler" failed after 0.022 seconds with 2 issues.
+✘ Test run with 13 tests in 2 suites failed after 0.029 seconds with 2 issues.

@@ -1,0 +1,13 @@
+getpwuid_r did not find a match for uid 501
+Filtering the log data using "composedMessage CONTAINS "[BGREPRO]""
+Timestamp               Ty Process[PID:TID]
+2026-11-13 10:03:01.865 Df BgCompletionRepro[78761:b7b81f] (Foundation) [BGREPRO] probe subscriber: didFinishLaunching, app state 2
+2026-11-13 10:03:01.944 Df BgCompletionRepro[78761:b7b81f] (Foundation) [BGREPRO] probe: background upload task 1 started on repro.probe.background-session -> http://localhost:8099/slow
+2026-11-13 10:03:23.675 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] probe subscriber: didFinishLaunching, app state 2
+2026-11-13 10:03:23.765 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] AppDelegate: iOS delivered handleEventsForBackgroundURLSession(repro.probe.background-session), app state 2
+2026-11-13 10:03:23.765 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] probe subscriber: received handleEventsForBackgroundURLSession(repro.probe.background-session)
+2026-11-13 10:03:23.818 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] probe: task 1 completed, HTTP 200, error: none
+2026-11-13 10:03:23.818 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] probe: urlSessionDidFinishEvents(forBackgroundURLSession: repro.probe.background-session)
+2026-11-13 10:03:23.819 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] probe: calling the completion handler it received from Expo's aggregator
+2026-11-13 10:03:53.165 Df BgCompletionRepro[78835:b7ba24] (Foundation) [BGREPRO] AppDelegate: 28 s after delivery (expo-file-system fallback is 25 s), system handler called for repro.probe.background-session: NO
+Child process terminated with signal 15: Terminated

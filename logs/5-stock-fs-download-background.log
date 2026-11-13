@@ -1,0 +1,7 @@
+getpwuid_r did not find a match for uid 501
+Filtering the log data using "composedMessage CONTAINS "[BGREPRO]""
+Timestamp               Ty Process[PID:TID]
+2026-11-13 10:11:04.134 Df BgCompletionRepro[81125:b7f6e3] (Foundation) [BGREPRO] probe subscriber: didFinishLaunching, app state 2
+2026-11-13 10:11:25.667 Df BgCompletionRepro[81125:b7f6e3] (Foundation) [BGREPRO] AppDelegate: iOS delivered handleEventsForBackgroundURLSession(dev.repro.bgcompletion.expo-file-system.network-task.background), app state 2
+2026-11-13 10:11:55.068 Df BgCompletionRepro[81125:b7f6e3] (Foundation) [BGREPRO] AppDelegate: 28 s after delivery (expo-file-system fallback is 25 s), system handler called for dev.repro.bgcompletion.expo-file-system.network-task.background: NO
+Child process terminated with signal 15: Terminated

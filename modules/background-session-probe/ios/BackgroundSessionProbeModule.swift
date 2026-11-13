@@ -52,6 +52,18 @@ final class ProbeSession: NSObject, URLSessionDataDelegate {
 public final class BackgroundSessionProbeAppDelegateSubscriber: ExpoAppDelegateSubscriber {
   public func application(
     _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+  ) -> Bool {
+    probeLog("probe subscriber: didFinishLaunching, app state \(application.applicationState.rawValue)")
+    // `xcrun simctl launch <device> <bundle id> -BGReproAutoStart YES` starts the upload without a tap.
+    if UserDefaults.standard.bool(forKey: "BGReproAutoStart") {
+      _ = ProbeSession.shared.startUpload(to: URL(string: "http://localhost:8099/slow")!)
+    }
+    return true
+  }
+
+  public func application(
+    _ application: UIApplication,
     handleEventsForBackgroundURLSession identifier: String,
     completionHandler: @escaping () -> Void
   ) {
