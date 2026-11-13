@@ -4,7 +4,7 @@ On iOS, an Expo SDK 58 app never calls the system completion handler of
 `application(_:handleEventsForBackgroundURLSession:completionHandler:)`. Two `expo-file-system`
 app delegate subscribers keep the handler (`EXSessionHandler` through
 `EXLegacyAppDelegateWrapper`, and `FileSystemBackgroundSessionHandler`), and Expo waits for every
-subscriber. See [ISSUE.md](ISSUE.md) for the analysis and [PR.md](PR.md) for the fix.
+subscriber. Issue: https://github.com/expo/expo/issues/53453. Fix: https://github.com/expo/expo/pull/53454.
 
 ## What is in the app
 
@@ -70,7 +70,7 @@ Unit tests (`tests/`, copied into `node_modules/expo-file-system/ios/Tests` and 
 
 ## Patch
 
-- `patches/0001-expo-file-system-fix.patch`: the commit on the local expo/expo branch
-  `fix/file-system-foreign-background-sessions` (worktree `~/Developer/expo-fs-background-completion-fix`), for `git am`.
+- `patches/0001-expo-file-system-fix.patch`: the commit of https://github.com/expo/expo/pull/53454, for `git am`
+  on expo/expo.
 - `patches/expo-file-system-foreign-background-sessions.diff`: the same source change, relative to
   the package, for `node_modules/expo-file-system` (no test, no changeset).
