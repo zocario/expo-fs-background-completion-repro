@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "expo-fs-background-completion-repro",
+    "name": "BgCompletionRepro",
     "slug": "expo-fs-background-completion-repro",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "dev.repro.bgcompletion"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +21,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "./plugins/withSystemCompletionLog.js"
+    ]
   }
 }
